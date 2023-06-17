@@ -56,7 +56,7 @@ This project is licensed under the MIT License. See the License.md file for more
 
 - ProjectPong was developed by [CreaTKeW](https://github.com/CreaTKeW).
 - Music was sourced from [Cyberleaf Studio](https://cyberleafstudio.com).
-- Explosion particle effects were sourced from [Inguz Media](www.assetstore.unity.com/publishers/45845).
+- Explosion particle effects were sourced from [Inguz Media](https://assetstore.unity.com/publishers/45845).
 - Font was sourced from [Yuji Adachi](https://www.dafont.com/yuji-adachi.d308).  
 
 If you encounter any issues or have suggestions for improvement, please feel free to reach out to [kewinptaszkiewicz@gmail.com](mailto:kewinptaszkiewicz@gmail.com).
