@@ -2,6 +2,16 @@
 
 ProjectPong is a classic Pong game where you control the left paddle and compete against an AI-controlled opponent. The objective is to hit the ball past the enemy paddle and into the field behind it to score points.
 
+## Screenshots
+
+![MainMenuSceneView]([screenshot-url](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ppss1.png?raw=true))
+
+![GameplaySceneView]([screenshot-url](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex.png?raw=true))
+
+![SettingsSceneView]([screenshot-url](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex1.png?raw=true))
+
+![CreditsSceneView]([screenshot-url](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex2.png?raw=true))
+
 ## Gameplay
 
 The game features two paddles: one controlled by the player (left paddle) and the other controlled by the AI (right paddle). The player's paddle can be moved using the following keyboard controls:
