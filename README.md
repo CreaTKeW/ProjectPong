@@ -4,13 +4,13 @@ ProjectPong is a classic Pong game where you control the left paddle and compete
 
 ## Screenshots
 
-![MainMenuSceneView]([screenshot-url](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ppss1.png?raw=true))
+![MainMenuSceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ppss1.png?raw=true)
 
-![GameplaySceneView]([screenshot-url](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex.png?raw=true))
+![GameplaySceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex.png?raw=true)
 
-![SettingsSceneView]([screenshot-url](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex1.png?raw=true))
+![SettingsSceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex1.png?raw=true)
 
-![CreditsSceneView]([screenshot-url](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex2.png?raw=true))
+![CreditsSceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex2.png?raw=true)
 
 ## Gameplay
 
