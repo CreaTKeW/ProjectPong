@@ -2,16 +2,6 @@
 
 ProjectPong is a classic Pong game where you control the left paddle and compete against an AI-controlled opponent. The objective is to hit the ball past the enemy paddle and into the field behind it to score points.
 
-## Screenshots
-
-![MainMenuSceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ppss1.png?raw=true)
-
-![GameplaySceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex.png?raw=true)
-
-![SettingsSceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex1.png?raw=true)
-
-![CreditsSceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex2.png?raw=true)
-
 ## Gameplay
 
 The game features two paddles: one controlled by the player (left paddle) and the other controlled by the AI (right paddle). The player's paddle can be moved using the following keyboard controls:
@@ -40,13 +30,19 @@ Please note that more options will be added to the settings menu in future updat
 
 ## Getting Started
 
+To play ProjectPong on your local machine or online on itch.io, follow these steps:
+
+### Playing on itch.io
+You can directly play ProjectPong online on itch.io by visiting the following link: [ProjectPong on itch.io](https://creatkew.itch.io/projectpong)
+
+### Playing Locally
 To play ProjectPong on your local machine, follow these steps:
 
 1. Download the latest release of ProjectPong from the [Releases](https://github.com/creatkew/ProjectPong/releases) page.
-2. Locate the ProjectPong.exe file in the downloaded release files.
-3. Double-click the ProjectPong.exe file to launch the game.
+2. Locate the `ProjectPong.exe` file in the downloaded release files.
+3. Double-click the `ProjectPong.exe` file to launch the game.
 4. In the main menu, click the "Play" button to start the game.
-5. Follow the on-screen instructions to start playing. Use the W and S keys to control the left paddle.
+5. Follow the on-screen instructions to start playing. Use the W and S keys to control the left paddle.  
 
 ## Contributing
 
@@ -68,6 +64,16 @@ This project is licensed under the MIT License. See the License.md file for more
 - Music was sourced from [Cyberleaf Studio](https://cyberleafstudio.com).
 - Explosion particle effects were sourced from [Inguz Media](https://assetstore.unity.com/publishers/45845).
 - Font was sourced from [Yuji Adachi](https://www.dafont.com/yuji-adachi.d308).  
+
+## Screenshots
+
+![MainMenuSceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ppss1.png?raw=true)
+
+![GameplaySceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex.png?raw=true)
+
+![SettingsSceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex1.png?raw=true)
+
+![CreditsSceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex2.png?raw=true)
 
 If you encounter any issues or have suggestions for improvement, please feel free to reach out to [kewinptaszkiewicz@gmail.com](mailto:kewinptaszkiewicz@gmail.com).
 
