@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class PressBehaviour : MonoBehaviour
 {
-    public string GitUrl;
-    public string GameUrl;
-    public void LinkToGitHub()
+    [SerializeField] private string GitUrl;
+    [SerializeField] private string GameUrl;
+    private void LinkToGitHub()
     {
         Application.OpenURL(GitUrl);
     }
 
-    public void LinkToGame()
+    private void LinkToGame()
     {
         Application.OpenURL(GameUrl);
     }

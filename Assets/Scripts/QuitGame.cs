@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class QuitGame : MonoBehaviour
 {
-    public void OnApplicationQuit()
+    private void OnApplicationQuit()
     {
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;

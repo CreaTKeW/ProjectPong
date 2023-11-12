@@ -3,29 +3,48 @@ using UnityEngine.UI;
 
 public class VolumeControl : MonoBehaviour
 {
-    public Slider volumeSlider;
-    public AudioSource audioSource;
+    [Header("Sliders")]
+    [SerializeField] private Slider musicVolumeSlider;
+    [SerializeField] private Slider soundEffectsSlider;
 
-    private const string VolumeKey = "volume";
-    private float musicVolume = 1f;
+    [Header("AudioSources")]
+    [SerializeField] private AudioSource musicAudioSource;
+    [SerializeField] private AudioSource soundEffectsAudioSource;
 
-    // Start is called before the first frame update
+    private float musicVolume = .5f;
+    private float soundEffectsVolume = .5f;
+
     void Start()
     {
-        musicVolume = PlayerPrefs.GetFloat("volume");
-        audioSource.volume = musicVolume;
-        volumeSlider.value = musicVolume;
+        if (!PlayerPrefs.HasKey("musicPlaylistVolume"))
+        {
+            PlayerPrefs.SetFloat("musicPlaylistVolume", musicVolume);
+        }
+        else musicVolume = PlayerPrefs.GetFloat("musicPlaylistVolume");
+
+        if (!PlayerPrefs.HasKey("soundEffectsVolume"))
+        {
+            PlayerPrefs.SetFloat("soundEffectsVolume", soundEffectsVolume);
+        }
+        else soundEffectsVolume = PlayerPrefs.GetFloat("soundEffectsVolume");
+
+
+        musicAudioSource.volume = musicVolume;
+        musicVolumeSlider.value = musicVolume;
+
+        soundEffectsAudioSource.volume = soundEffectsVolume;
+        soundEffectsSlider.value = soundEffectsVolume;
     }
 
     void Update()
     {
-       musicVolume = volumeSlider.value;
-       audioSource.volume = musicVolume;
-       PlayerPrefs.SetFloat("volume", musicVolume);      
-    }
+        musicVolume = musicVolumeSlider.value;
+        musicAudioSource.volume = musicVolume;
 
-    void OnVolumeChanged(float volume)
-    {
-        musicVolume = volume;
+        soundEffectsVolume = soundEffectsSlider.value;
+        soundEffectsAudioSource.volume = soundEffectsVolume;
+
+        PlayerPrefs.SetFloat("musicPlaylistVolume", musicVolume);
+        PlayerPrefs.SetFloat("soundEffectsVolume", soundEffectsVolume);
     }
 }

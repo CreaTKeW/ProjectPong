@@ -4,15 +4,15 @@ using UnityEngine.UI;
 
 public class PointSystem : MonoBehaviour
 {
-    public AudioSource scoreSound;
-    public Text AIScoreText;
-    public Text PlayerScoreText;
+    [SerializeField] private AudioSource scoreSound;
+    [SerializeField] private Text AIScoreText;
+    [SerializeField] private Text PlayerScoreText;
 
-    int PlayerScore;
-    int AIScore;
-    public int maxScore = 5; 
+    [SerializeField] private int PlayerScore;
+    [SerializeField] private int AIScore;
+    [SerializeField] private int maxScore = 5; 
 
-    public void UpdateScore()
+    private void UpdateScore()
     {
         AIScoreText.text = "" + AIScore;
         PlayerScoreText.text = "" + PlayerScore;
@@ -33,7 +33,7 @@ public class PointSystem : MonoBehaviour
         }
     }
 
-    public void AddScore(int addScore)
+    private void AddScore(int addScore)
     {
         if(addScore == 1)
         {

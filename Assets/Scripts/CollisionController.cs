@@ -1,15 +1,13 @@
-using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class CollisionController : MonoBehaviour
 {
-    public AudioSource bounceSound;
-    public ballMovement ballMovement;
+    [SerializeField] private AudioSource bounceSound;
+    [SerializeField] private ballMovement ballMovement;
 
     [SerializeField] GameObject destroyParticle;
 
-    void BounceFromRacket(Collision2D collision)
+    private void BounceFromRacket(Collision2D collision)
     {
         Vector3 ballPosition = this.transform.position;
         Vector3 racketPosition = collision.gameObject.transform.position;
@@ -18,14 +16,14 @@ public class CollisionController : MonoBehaviour
 
         float x;
 
-        if (collision.gameObject.name == "Player")
+        if (collision.gameObject.name == "PlayerPaddle")
         {
             x = 1;
         }
         else { x = -1; }
 
         float y = (ballPosition.y - racketPosition.y) / racketHight;
-        
+
         this.ballMovement.IncreaseHitCounter();
         this.ballMovement.MoveBall(new Vector2(x, y));
     }
@@ -41,7 +39,7 @@ public class CollisionController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.name == "Player" ||  collision.gameObject.name == "AI")
+        if(collision.gameObject.name == "PlayerPaddle" ||  collision.gameObject.name == "EnemyPaddle")
         {
             bounceSound.Play();
             this.BounceFromRacket(collision);

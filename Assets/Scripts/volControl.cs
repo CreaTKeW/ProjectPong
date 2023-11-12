@@ -1,27 +1,39 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class volControl : MonoBehaviour
 {
-    public AudioSource audioSource;
+    [SerializeField] private AudioSource musicAudioSource;
+    [SerializeField] private AudioSource soundEffectsAudioSource;
 
-    private const string VolumeKey = "volume";
-    private float musicVolume = 1f;
+    private float musicVolume = .5f;
+    private float soundEffectsVolume = .5f;
 
-    // Start is called before the first frame update
     void Start()
     {
-        musicVolume = PlayerPrefs.GetFloat("volume");
-        audioSource.volume = musicVolume;
+        if (!PlayerPrefs.HasKey("musicPlaylistVolume"))
+        {
+            PlayerPrefs.SetFloat("musicPlaylistVolume", musicVolume);
+        }
+        else musicVolume = PlayerPrefs.GetFloat("musicPlaylistVolume");
+
+        if (!PlayerPrefs.HasKey("soundEffectsVolume"))
+        {
+            PlayerPrefs.SetFloat("soundEffectsVolume", soundEffectsVolume);
+        }
+        else soundEffectsVolume = PlayerPrefs.GetFloat("soundEffectsVolume");
+
+
+        musicAudioSource.volume = musicVolume;
+        soundEffectsAudioSource.volume = soundEffectsVolume;
     }
 
     void Update()
     {
-        audioSource.volume = musicVolume;
-        PlayerPrefs.SetFloat("volume", musicVolume);
-    }
+        musicAudioSource.volume = musicVolume;
+        soundEffectsAudioSource.volume = soundEffectsVolume;
 
-    void OnVolumeChanged(float volume)
-    {
-        musicVolume = volume;
+        PlayerPrefs.SetFloat("musicPlaylistVolume", musicVolume);
+        PlayerPrefs.SetFloat("soundEffectsVolume", soundEffectsVolume);
     }
 }

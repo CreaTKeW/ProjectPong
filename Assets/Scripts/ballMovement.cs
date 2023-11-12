@@ -1,26 +1,24 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class ballMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public TrailRenderer trailRenderer;
+    [SerializeField] private TrailRenderer trailRenderer;
 
-    public float speed;
-    public float addSpeed;
-    public float maxSpeed;
+    [SerializeField] private float speed;
+    [SerializeField] private float addSpeed;
+    [SerializeField] private float maxSpeed;
 
-    int hitCounter = 0;
+    private int hitCounter = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine(this.StartBall());   
     }
 
-    public void PositionBall()
+    private void PositionBall()
     {
         trailRenderer.enabled = false;
         rb.velocity = new Vector2(0, 0);
