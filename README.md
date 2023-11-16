@@ -1,8 +1,27 @@
 # ProjectPong
 
+## Table of Contents
+- [Description](#description)
+- [License](#license)
+- [Controls](#controls)
+- [Features](#features)
+- [How to Play](#how-to-play)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [Contact and Support](#contact-and-support)
+
+## Description
+
 ProjectPong is a classic Pong game where you control the left paddle and compete against an AI-controlled opponent. The objective is to hit the ball past the enemy paddle and into the field behind it to score points.
 
-## Gameplay
+## License
+
+Project Pong is open-source software released under the [MIT License](https://github.com/CreaTKeW/ProjectPong/blob/main/LICENSE). You are free to use, modify, and distribute the software in accordance with the terms specified in the license.
+
+For details, please refer to the [LICENSE](https://github.com/CreaTKeW/ProjectPong/blob/main/LICENSE) file in this repository.
+
+## Controls
 
 The game features two paddles: one controlled by the player (left paddle) and the other controlled by the AI (right paddle). The player's paddle can be moved using the following keyboard controls:
 
@@ -11,42 +30,39 @@ The game features two paddles: one controlled by the player (left paddle) and th
 
 The AI-controlled right paddle automatically follows the movement of the ball.
 
-To score points, hit the ball past the enemy paddle and into the field behind it. The game continues until one player reaches a score of 5 points. Once a player scores 5 points, the game ends, and the winner is declared.
+## Features
 
-## Pausing the Game
+- 🏓 Take control of the paddle: the left one is under your command, while the AI governs the right paddle.
+- ⬆️ Elevate the left paddle by pressing the W key.
+- ⬇️ Lower the left paddle by pressing the S key.
+- 🏁 Reach a score of 5 points to secure victory.
 
-During gameplay, you can press the "Esc" button to pause the game. This will bring up the pause menu where you can resume the game or access other options.
+## How to Play
 
-## Settings
+### Local Play
 
-The game includes a settings menu where you can currently adjust the music volume. To access the settings menu, follow these steps:
+To play Project Pong locally on your machine, follow these steps:
 
-1. Press the "Settings" button on the main menu or during gameplay.
-2. In the settings menu, you can adjust the music volume using the available options.
-3. Use the arrow keys or mouse to navigate through the options.
-4. Press Enter or click the "Apply" button to save the changes.
+1. Download the latest game version files from [the releases section of this repository](https://github.com/CreaTKeW/ProjectPong/releases).
+2. Extract the downloaded files to a folder on your computer.
+3. Open the `ProjectPong.exe` executable file to start the game.
 
-Please note that more options will be added to the settings menu in future updates.
+### itch.io
 
-## Getting Started
+You can play Project Pong on itch.io by following these steps:
 
-To play ProjectPong on your local machine or online on itch.io, follow these steps:
+1. Visit the [Project Pong page on itch.io](https://creatkew.itch.io/projectpong).
+2. Click on the "Run Game" button to access the game.
 
-### Playing on itch.io
-You can directly play ProjectPong online on itch.io by visiting the following link: [ProjectPong on itch.io](https://creatkew.itch.io/projectpong)
+## Screenshots
 
-### Playing Locally
-To play ProjectPong on your local machine, follow these steps:
-
-1. Download the latest release of ProjectPong from the [Releases](https://github.com/creatkew/ProjectPong/releases) page.
-2. Locate the `ProjectPong.exe` file in the downloaded release files.
-3. Double-click the `ProjectPong.exe` file to launch the game.
-4. In the main menu, click the "Play" button to start the game.
-5. Follow the on-screen instructions to start playing. Use the W and S keys to control the left paddle.  
+![MainMenuView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ppss1.png?raw=true)
+![GameplayView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex.png?raw=true)
+![CreditsSceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex2.png?raw=true)
 
 ## Contributing
 
-Contributions to ProjectPong are welcome! If you want to contribute to the project, please follow these steps:
+Contributions to Project Pong are welcome! If you want to contribute to the project, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
@@ -54,27 +70,15 @@ Contributions to ProjectPong are welcome! If you want to contribute to the proje
 4. Commit and push your changes to your forked repository.
 5. Submit a pull request, explaining the changes you've made and why they should be included.
 
-## License
-
-This project is licensed under the MIT License. See the License.md file for more details.
-
 ## Credits
 
 - ProjectPong was developed by [CreaTKeW](https://github.com/CreaTKeW).
 - Music was sourced from [Cyberleaf Studio](https://cyberleafstudio.com).
 - Explosion particle effects were sourced from [Inguz Media](https://assetstore.unity.com/publishers/45845).
-- Font was sourced from [Yuji Adachi](https://www.dafont.com/yuji-adachi.d308).  
+- Font was sourced from [Yuji Adachi](https://www.dafont.com/yuji-adachi.d308). 
 
-## Screenshots
-
-![MainMenuSceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ppss1.png?raw=true)
-
-![GameplaySceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex.png?raw=true)
-
-![SettingsSceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex1.png?raw=true)
-
-![CreditsSceneView](https://github.com/CreaTKeW/ProjectPong/blob/main/screenshots/ex2.png?raw=true)
+## Contact and Support
 
 If you encounter any issues or have suggestions for improvement, please feel free to reach out to [kewinptaszkiewicz@gmail.com](mailto:kewinptaszkiewicz@gmail.com).
 
-Enjoy playing ProjectPong!
+Enjoy playing Project Pong!
